@@ -1,0 +1,30 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  background-color: cadetblue;
+}
+table {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(49, 155, 204);
+}
+#btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  background-color: gray;
+}
+
+#submit {
+  background-color: aqua;
+  margin-right: 10px;
+  width: 90px;
+}
+form {
+  background-color: rgb(77, 31, 77);
+}
+#reset {
+  background-color: chocolate;
+  padding: 5px;
+  width: 90px;
+}

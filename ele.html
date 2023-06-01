@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electricity Bill</title>
+    <link rel="stylesheet" href="ele.css" />
+  </head>
+  <body>
+    <div id="form">
+      <form action="" onsubmit="calculateBill()">
+        <div><h1>Electricity Bill</h1></div>
+        <div>
+          <table>
+            <tr>
+              <td><label for="heading1">Enter RR Number</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="heading1"
+                  placeholder="Enter Your RR Number" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="cname">Consumer Name</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="cname"
+                  placeholder="Enter Consumer Name" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="address">Address</label></td>
+              <td>
+                <textarea name="Address" id="address" cols="20" rows="5">
+                  Enter Your Address</textarea
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><label for="billdate">Bill Reading Date</label></td>
+              <td><input type="date" id="billdate" /></td>
+            </tr>
+            <tr>
+              <td><label for="oldreading">Enter Old Meter readings</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="oldreading"
+                  placeholder="Enter old Readings" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="currReading">Enter Current Reading</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="currReading"
+                  placeholder="Enter Current Reading" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="arrears">Enter Arrears if any</label></td>
+              <td><input type="number" id="arrears" /></td>
+            </tr>
+          </table>
+        </div>
+        <div id="btn">
+          <button type="submit" id="submit">Submit</button>
+          <button type="reset" id="reset">Clear</button>
+        </div>
+      </form>
+      <b id="cn"></b>
+      <b id="output"></b>
+      <i></i>
+    </div>
+    <script src="ele.js"></script>
+  </body>
+</html>
